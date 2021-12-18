@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif; 
+}
+.app {
+  background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+  color: rgb(255, 255, 255);
+  min-height: 100vh;
+}
+.zero {
+  color: #6a11cb;
+}
+.positive {
+  color: green;
+}
+.negative{
+  color: red;
+}
+
+
+.balance {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 40px 0;
+}
+.balance .title {
+  margin-bottom: 40px;
+}
+.balance .total {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;;
+}
+
+.income-expense {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  background-color: white;
+  border-radius: 4px;
+  color: #6a11cb;
+  padding: 20px 0;
+  margin-bottom: 40px;
+}
+.add-transaction {
+  margin: 40px 0;
+}
+.add-transaction .title {
+  margin-bottom: 40px;
+  text-align: center;
+}
+.add-transaction .input-wrapper {
+  margin-bottom: 20px;
+}
+.add-transaction input {
+  border: 0;
+  border-radius: 4px;
+  padding: 6px;
+  width: 100%;
+  color: #460c85;
+}
+.add-transaction input:focus, .add-transaction button:focus {
+  outline: none
+}
+.add-transaction input::placeholder {
+  font-size: 14px;
+}
+.add-transaction button {
+  border: 0;
+  background-color:  #460c85;
+  border-radius: 4px;
+  color: white;
+  padding: 6px;
+  width: 100%;
+  transition: 0.3s ease-in-out;
+}
+.add-transaction button:hover {
+  background-color: #38076d;
+}
+.transaction-list {
+  margin: 40px 0;
+}
+.transaction-list .title {
+  margin-bottom: 40px;
+  text-align: center;
+}
+.transaction-list ul {
+  list-style: none;
+  padding: 0;
+  
+}
+.transaction-list li {
+  background-color: white;
+  color: #460c85;
+  border-radius: 4px;
+  padding: 3px 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  border: 0;
+
+}
+.transaction-list button {
+  border: 0;
+  background-color: white;
+  color: red;
+}
